@@ -30,8 +30,11 @@ const getWeather = async (location) => {
 // getWeather("tokyo");
 
 const express = require("express");
-
 const app = express();
+const path = require("path");
+
+const pathPublic = path.join(__dirname, "./public");
+app.use(express.static(pathPublic));
 
 //http://localhost:7000/
 app.get("/", (req, res) => {
