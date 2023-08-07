@@ -38,8 +38,10 @@ app.use(express.static(pathPublic));
 
 //http://localhost:7000/
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.render("weather");
 });
+
+app.set("view engine", "hbs"); //pug
 
 const port = 7000;
 app.listen(port, () => {
