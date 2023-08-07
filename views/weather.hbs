@@ -21,7 +21,7 @@
         <div class="weather">
             <div class="weather__content text-center">
                 <h1 class="title">Cyber Weather</h1>
-                {{!-- {{#if isSearch}} --}}
+                {{#if status}}
                 <section class="search">
                     <h1 class="place" id="place">{{region}}</h1>
                     <h2 class="country" id="country">{{country}}</h2>
@@ -56,7 +56,7 @@
                         </form>
                     </div>
                 </section>
-                {{!-- {{else}}
+                {{else}}
                 <section class="not-search">
                     <div>
                         <form action="/" class="form-search container">
@@ -72,7 +72,7 @@
                         </form>
                     </div>
                 </section>
-                {{/if}} --}}
+                {{/if}}
             </div>
         </div>
     </div>
